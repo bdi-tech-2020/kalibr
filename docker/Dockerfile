@@ -25,7 +25,10 @@ RUN apt-get update && apt-get install -y \
 	wget \
 	autoconf automake 
 
-RUN python -m pip install --upgrade pip; python -m pip install python-igraph --upgrade
+RUN curl "https://bootstrap.pypa.io/pip/2.7/get-pip.py" -o "get-pip.py"; python get-pip.py
+
+RUN pip install python-igraph==0.7.1.post6
+RUN apt-get install python-tk -y
 ENV KALIBR_WORKSPACE /kalibr_workspace
 
 RUN 	mkdir -p $KALIBR_WORKSPACE/src &&\
