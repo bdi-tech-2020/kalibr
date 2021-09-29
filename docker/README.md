@@ -4,6 +4,8 @@ Docker image to run Kalibr (**With a fix for a single camera calibration**)
 
 Built versions available on Docker Hub https://hub.docker.com/repository/docker/mzahana/kalibr
 
+This image also includes `imu_utils` package which can be used to calculate IMU noise characteristics
+
 ## Usage
 
 ### Single script usage
