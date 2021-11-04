@@ -2,6 +2,9 @@
 This is a slightly modified version of Kalibr to enable single camera calibration, and provide a working docker container.
 See the dokcer [folder](docker/) for details on how to run Kalibr in Docker.
 
+In addition, the docker image has the `imu_utils` package which can be used to calibrate the IMU intrinsics. Check `docker/README.md` for more information on the usage
+
+# Original documentation
 ![Kalibr](https://raw.githubusercontent.com/wiki/ethz-asl/kalibr/images/kalibr_small.png)
 
 *Ubuntu 14.04+ROS indigo*: [![Build Status](https://jenkins.asl.ethz.ch/buildStatus/icon?job=kalibr_weekly/label=ubuntu-trusty)](https://jenkins.asl.ethz.ch/job/kalibr_weekly/label=ubuntu-trusty/) *Ubuntu 16.04+ROS kinetic*: [![Build Status](https://jenkins.asl.ethz.ch/buildStatus/icon?job=kalibr_weekly/label=ubuntu-trusty)](https://jenkins.asl.ethz.ch/job/kalibr_weekly/label=ubuntu-xenial/)

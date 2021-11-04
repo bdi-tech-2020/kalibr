@@ -1,10 +1,9 @@
-# Docker ROS Kalibr
-
+# Docker image
 Docker image to run Kalibr (**With a fix for a single camera calibration**)
 
 Built versions available on Docker Hub https://hub.docker.com/repository/docker/mzahana/kalibr
 
-This image also includes `imu_utils` package which can be used to calculate IMU noise characteristics
+This image also includes `imu_utils` package which can be used to calculate IMU intrinsics.
 
 ## Usage
 
@@ -60,3 +59,12 @@ Example of calibration command :
 ```
 kalibr_calibrate_cameras --bag /foo/sequence.bag --target /foo/april_6x6_80x80cm.yaml --models 'pinhole-radtan' 'pinhole-radtan' --topics /cam0/image_raw /cam1/image_raw --dont-show-report
 ```
+
+## IMU calibration
+* Record a ROS bag with the IMU topic for a duration of 2 hours. It is recommended that IMU topic is published at 200 Hz. Make sure that the ROS bag is located in  the directory that is passed to the `run_kalibr.sh` script
+* Inside the docker container
+```bash
+roslaunch imu_utils imu_stats.launch bag:=/root/data/imu_bag.bag imu_name:=d435i imu_topic:=/camera/imu
+```
+* After the calibration is done, the result will be saved in `/kalibr_workspace/src/imu_utils/data/`
+* You can use the average values in the kalibr imu Yaml file
