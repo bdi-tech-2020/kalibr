@@ -1,0 +1,1 @@
+kalibr_calibrate_imu_camera --target ../april_6x6_2x2cm.yaml --bag ../2023-03-27-14-39-15.bag --cam ../camchain-samplesmulti-imuimu_april.yaml --imu imu_test.yaml

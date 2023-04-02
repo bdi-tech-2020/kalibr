@@ -1,0 +1,1 @@
+kalibr_calibrate_cameras --bag xr_50_calibration_2023-04-02-02-06-24.bag --target april_6x6_8x8cm.yaml --models 'pinhole-equi' 'pinhole-equi' --topics /xv_sdk/xv_dev/fisheye_cameras/right/image /xv_sdk/xv_dev/fisheye_cameras/left/image

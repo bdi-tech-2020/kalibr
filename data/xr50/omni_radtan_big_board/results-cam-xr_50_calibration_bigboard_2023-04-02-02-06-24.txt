@@ -1,0 +1,30 @@
+Calibration results 
+====================
+Camera-system parameters:
+	cam0 (/xv_sdk/xv_dev/fisheye_cameras/right/image):
+	 type: <class 'aslam_cv.libaslam_cv_python.DistortedOmniCameraGeometry'>
+	 distortion: [-0.07304337  0.54131418  0.00243328  0.00138625] +- [ 0.00761941  0.04159168  0.00029792  0.00029763]
+	 projection: [   1.85817464  790.07751752  789.80252041  309.68915552  202.42939617] +- [ 0.00265575  0.05888534  0.05890915  0.24497905  0.21531583]
+	 reprojection error: [-0.000002, 0.000000] +- [0.228945, 0.177853]
+
+	cam1 (/xv_sdk/xv_dev/fisheye_cameras/left/image):
+	 type: <class 'aslam_cv.libaslam_cv_python.DistortedOmniCameraGeometry'>
+	 distortion: [-0.04408051  0.41339589  0.00378654  0.00048383] +- [ 0.00775959  0.04242532  0.00029646  0.00029146]
+	 projection: [   1.85932398  793.79124761  793.886898    320.20187013  210.42494747] +- [ 0.00268282  0.05767135  0.05766434  0.24581887  0.2172375 ]
+	 reprojection error: [0.000002, -0.000000] +- [0.222547, 0.173987]
+
+	baseline T_1_0:
+	 q: [-0.00072133 -0.00062339  0.00482076  0.99998793] +- [ 0.00044636  0.00072786  0.00007565]
+	 t: [-0.04997658 -0.00016073 -0.00098927] +- [ 0.00015014  0.00014855  0.0003338 ]
+
+
+
+Target configuration
+====================
+
+  Type: aprilgrid
+  Tags: 
+    Rows: 6
+    Cols: 6
+    Size: 0.088 [m]
+    Spacing 0.0264 [m]

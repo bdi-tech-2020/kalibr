@@ -1,0 +1,1 @@
+rosrun kalibr kalibr_calibrate_imu_camera --target ../april_6x6_8x8cm.yaml --cam ../camer_calib_result.yaml --imu ./kalib_imu.yaml --bag ./2023-04-01-19-02-08.bag --show-extraction

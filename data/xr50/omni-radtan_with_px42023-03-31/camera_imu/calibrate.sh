@@ -1,0 +1,1 @@
+rosrun kalibr kalibr_calibrate_imu_camera --target ../../omni-radtan/april_6x6_2x2cm.yaml --cam ../../omni-radtan/camchain-xr50_calibration.yaml --imu kalibr_imu.yaml --bag ../xr50_px4_calib.bag  --show-extraction

@@ -1,0 +1,1 @@
+kalibr_calibrate_cameras --bag 2023-03-27-08-33-01.bag --target april_6x6_2x2cm.yaml --models 'pinhole-radtan' 'pinhole-radtan' --topics /camera/infra1/image_rect_raw /camera/infra2/image_rect_raw
