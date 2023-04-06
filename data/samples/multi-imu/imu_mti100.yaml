@@ -1,0 +1,23 @@
+rostopic: /mti_100/sensor/imu_raw
+update_rate: 400.0 #Hz
+
+# # Datasheet
+# # https://www.xsens.com/download/pdf/documentation/mti-100/mti-100-series.pdf
+# accelerometer_noise_density: 0.000798534 #continous (from datasheet)
+# accelerometer_random_walk: 0.0002 
+# gyroscope_noise_density: 0.000174533 #continous (from datasheet)
+# gyroscope_random_walk: 4.0e-06
+
+# google group
+# https://groups.google.com/d/msg/kalibr-users/m17VpekSHtg/9_wccwdTiUAJ
+# accelerometer_noise_density: 0.006056 #continous
+# accelerometer_random_walk: 0.0002 
+# gyroscope_noise_density: 0.0011056 #continous
+# gyroscope_random_walk: 6.2176e-05
+
+# google group (INFLATED RANDOM WALKS)
+# https://groups.google.com/d/msg/kalibr-users/m17VpekSHtg/9_wccwdTiUAJ
+accelerometer_noise_density: 0.006056 #continous
+accelerometer_random_walk: 0.002 
+gyroscope_noise_density: 0.0011056 #continous
+gyroscope_random_walk: 0.00062176
